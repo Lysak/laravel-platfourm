@@ -1,5 +1,5 @@
 {
-    "name": "longman/laravel-platfourm",
+    "name": "longman/laravel-platfourm-5.5",
     "type": "library",
     "description": "Package to implement right Repository/Service architecture in Laravel 5.x",
     "keywords": ["laravel", "package", "repository", "service", "ddd", "domain"],
