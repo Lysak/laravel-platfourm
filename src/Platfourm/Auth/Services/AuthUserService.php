@@ -27,12 +27,12 @@ class AuthUserService implements AuthUserServiceContract
 {
     use ThrottlesLogins;
 
-    private $user = null;
-    private $guard = null;
+    protected $user = null;
+    protected $guard = null;
 
-    private $repository;
-    private $auth;
-    private $config;
+    protected $repository;
+    protected $auth;
+    protected $config;
 
     public function __construct(
         UserRepository $repository,
