@@ -21,7 +21,7 @@ use Longman\Platfourm\Auth\Exceptions\UnauthorizedException;
 use Longman\Platfourm\Contracts\Auth\AuthUserService as AuthUserServiceContract;
 use Longman\Platfourm\User\Models\Eloquent\User;
 use Longman\Platfourm\User\Repositories\Eloquent\UserRepository;
-use Symfony\Component\HttpFoundation\Session\SessionInterface as SessionContract;
+use Illuminate\Contracts\Session\Session as SessionContract; 
 
 class AuthUserService implements AuthUserServiceContract
 {
