@@ -56,8 +56,8 @@ class ResponseGuestIfAuthenticated
 
     protected function redirect()
     {
-        $url = app()->isAdmin() ? admin_url('login') : site_url('login');
-        return redirect()->guest($url)->with(['error' => 'You must log in first']);
+        $url = app()->isAdmin() ? admin_url('login') : site_url('/');
+        return redirect()->guest($url)->with('success', 'You are logged in');
     }
 
 }
